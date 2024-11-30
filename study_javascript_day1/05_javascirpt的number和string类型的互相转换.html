@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>number和string类型的互相转换</title>
+</head>
+<body>
+
+</body>
+<script>
+    let s1 = prompt("请输入字符:")
+    alert(`s1类型: ${typeof s1}`) // string
+    let n1 = prompt("请输入数字:")
+    alert(`n1类型: ${typeof n1}`) // string
+    let s2 = "12345"
+    // 显示转换
+    alert(typeof Number(s2))    // number
+
+    // 隐式转换
+    // number
+    alert(typeof (12345-s2) )
+    // string
+    alert(typeof (12345+s2))
+</script>
+</html>

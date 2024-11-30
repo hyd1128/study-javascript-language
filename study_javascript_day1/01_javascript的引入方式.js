@@ -1,0 +1,1 @@
+console.log("javascript的外部引入方式")
