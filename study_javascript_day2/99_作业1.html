@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业1</title>
+</head>
+<body>
+<script>
+    /**
+     * 题目要求
+     * 1、提示输入框写到循环中
+     * 2、用户输入4则退出循环 break
+     * 3、提前准备一个金额预先存储一个数额 money
+     * 4、根据输入不同的值，做不同的操作
+     * (1)  取钱则是减法操作， 存钱则是加法操作，查看余额则是直接显示金额
+     * (2) 可以使用 if else if 多分支 来执行不同的操作
+     */
+
+    let balance = 1000
+    while (true) {
+        // 操作
+        let action_ = + prompt("请输入操作: \n 1: 取款 \n 2: 存款  \n 3: 查看余额 \n 4: 退出")
+        if (action_ === 1) {
+            // 取款
+            balance -= 100
+            alert(`当前余额: ${balance}, 取款100元`)
+        } else if (action_ === 2) {
+            balance += 100
+            alert(`当前余额: ${balance}, 存款款100元`)
+        } else if (action_ === 3) {
+            alert(`当前余额: ${balance}`)
+        } else {
+            alert("退出系统")
+            break
+        }
+    }
+</script>
+</body>
+</html>

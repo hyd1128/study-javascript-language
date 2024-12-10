@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch语句</title>
+</head>
+<body>
+<script>
+    //  注意: switch判断第一个符合条件之后，如果break 则之后所有的case都不会再检测 这是switch的穿透机制
+    switch (2) {
+        case 2:
+            console.log(2)
+            break
+        case 1:
+            console.log(1)
+            break
+        case 3:
+            console.log(3)
+            break
+        default:
+            console.log("default")
+
+    }
+</script>
+</body>
+</html>
