@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组的使用</title>
+</head>
+<body>
+<script>
+    let list = ["html", "css", "javascript"]
+    let scores = [78, 84, 70, 62, 75]
+    console.log(list)
+    console.log(scores)
+
+    // 获得数组长度
+    // 数组自带的length特性
+    console.log(list.length)
+
+    // 操作数组
+    // 在数组的末尾添加一个元素
+    list.push("java")
+    // 在数组的头部添加一个元素
+    list.unshift("python")
+    console.log("current list:" + list)
+    // 从索引2开始删除1个元素
+    list.splice(2, 1)
+    console.log(list)
+    // pops删除最后一个单元
+    list.pop()
+    // shift删除第一个单元
+    list.shift()
+    console.log(list)
+</script>
+</body>
+</html>

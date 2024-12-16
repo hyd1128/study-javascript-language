@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组</title>
+</head>
+<body>
+<script>
+    let classes = ['小明', '小刚', '小红', '小丽', '小米']
+
+    // 1. 访问数组，语法格式为：变量名[索引值]
+    document.write(classes[0]) // 结果为：小明
+    document.write(classes[1]) // 结果为：小刚
+    document.write(classes[4]) // 结果为：小米
+
+    // 2. 通过索引值还可以为数组单重新赋值
+    document.write(classes[3]) // 结果为：小丽
+    // 重新为索引值为 3 的单元赋值
+    classes[3] = '小小丽'
+    document.write(classes[3]); // 结果为： 小小丽
+</script>
+</body>
+</html>

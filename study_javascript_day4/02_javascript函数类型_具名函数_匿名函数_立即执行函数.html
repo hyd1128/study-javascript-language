@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript函数类型</title>
+</head>
+<body>
+<script>
+    // 立即执行函数
+    (function() {
+        console.log("这是一个立即执行函数！");
+    })();
+
+
+
+    // 具名函数
+    function namedFunction() {
+        console.log("我是具名函数")
+    }
+
+    // 匿名函数
+    let anonymityFunction = function() {
+        console.log("我是匿名函数")
+    }
+
+    // 调用具名函数
+    namedFunction()
+
+    // 调用匿名函数
+    anonymityFunction()
+
+
+</script>
+</body>
+</html>
