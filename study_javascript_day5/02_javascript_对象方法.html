@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript对象方法</title>
+</head>
+<body>
+    <script>
+       // 方法是依附在对象上的函数
+       let person = {
+           name: "小红",
+           age: 18,
+           sing: function() {
+               console.log("两只老虎, 两只老虎爬的快....")
+           },
+           run: function () {
+               console.log("跑得快....")
+           }
+       }
+
+       // 调用对象上的方法
+       person.sing()
+       person.run()
+    </script>
+</body>
+</html>
