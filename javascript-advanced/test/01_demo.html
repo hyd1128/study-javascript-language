@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    1. 闭包中创建的变量为什么可以在全局作用域中被访问
+-->
+    <script>
+      // {
+      //   var i1 = 10;
+      //   let i2 = 20;
+      //   console.log(i1);
+      //   console.log(i2);
+      // }
+      // console.log(i1);
+      // console.log(i2);
+
+      console.log(a1); // undefined
+      console.log(a2); // 报错
+      var a1;
+      let a2;
+    </script>
+  </body>
+</html>
