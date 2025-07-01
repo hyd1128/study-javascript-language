@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js数组对象</title>
+  </head>
+  <body>
+    <script>
+      // // 创建一个数组
+      // const arrayOne = [1, 2, 3, 4, 5];
+      // console.log(arrayOne);
+      // let arrayLength = arrayOne.length;
+      // console.log(arrayLength);
+      // console.log(typeof arrayLength);
+
+      // // 链接两个数组
+      // const arrayTwo = [1, 2, 3];
+      // const arrayThree = ["a", "b", "c"];
+      // const arrayFour = arrayTwo.concat(arrayThree);
+      // console.log(arrayFour);
+
+      // // 返回一个迭代器
+      // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // for (let [index, value] of fruits.entries()) {
+      //   console.log(index, value);
+      // }
+
+      // 数组筛选
+      // const arrOne = [1,2,4,5,6]
+      // const arrTwo = arrOne.filter((value) => value > 4)
+      // console.log(arrTwo)
+
+      // 查找第一个符合条件的数组
+      // const arrThree = [1,2,3,4,5,6]
+      // const arrFour = arrThree.find((value) => value > 4)
+      // console.log(arrFour)
+
+      // from: 通用一个拥有length属性的对象或可迭代的对象来返回一个数组
+      // var myArr = Array.from("RUNOOB")
+      // console.log(myArr)
+
+      // map: 通过指定函数处理数组中的每一个元素 返回一个新数组
+      arrOne = [1, 2, 3, 4, 5, 6];
+      arrTwo = arrOne.map((value) => value ** 2 )
+      console.log(arrOne)
+      console.log(arrTwo)
+    </script>
+  </body>
+</html>

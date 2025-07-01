@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js数据类型</title>
+  </head>
+  <body>
+    <script>
+      // 1. 基本数据类型
+      // 1.1 数值型
+      let num = 10;
+      console.log(typeof num); // number
+
+      // 1.2 字符串型
+      let str = "hello world";
+      console.log(typeof str); // string
+
+      // 1.3 布尔型
+      let bool = true;
+      console.log(typeof bool); // boolean
+
+      // 1.4 空值型
+      let empty = null;
+      console.log(typeof empty); // object
+
+      // 1.5 未定义型
+      let undefinedVar;
+      console.log(typeof undefinedVar); // undefined
+
+      // 2. 引用数据类型
+      // 2.1 对象
+      let obj = { name: "张三", age: 18 };
+      console.log(typeof obj); // object
+
+      // 2.2 数组
+      let arr = [1, 2, 3];
+      console.log(typeof arr); // object
+
+      // 2.3 函数
+      function sayHello() {
+        console.log("hello");
+      }
+      console.log(typeof sayHello); // function 
+
+      // 2.4 日期
+      let date = new Date();
+      console.log(typeof date); // object   
+
+      // 2.5 正则表达式
+      let reg = /^\d+$/;
+      console.log(typeof reg); // object    
+
+      // 扩展:js数据类型还可以查看这两个地方
+      // https://www.runoob.com/js/js-type-conversion.html
+      // https://www.runoob.com/js/js-typeof.html
+    </script>
+  </body>
+</html>

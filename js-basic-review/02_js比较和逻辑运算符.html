@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js逻辑运算符</title>
+  </head>
+  <body>
+    <script>
+      // 1. 等于
+      let a = 10;
+      let b = 10;
+      let c = "10";
+      console.log(a == b); // true
+      console.log(a == c);
+      // 2. 绝对等于
+      console.log(a === b); // true
+      console.log(a === c);
+      // 3. 不等于
+      console.log("不等于", a != b); // false
+      console.log("不等于", a != c);
+      // 4. 严格不等于
+      console.log("严格不等于", a !== b); // false
+      console.log("严格不等于", a !== c);
+      // 5. 大于
+      console.log(a > b); // false
+      // 6. 大于等于
+      console.log(a >= b); // true
+      // 7. 小于
+      console.log(a < b); // false
+      // 8. 小于等于
+      console.log(a <= b); // true
+      // 9. 逻辑与 &&
+      console.log(a > 5 && b > 5); // true
+      // 10. 逻辑或 ||
+      console.log(a > 5 || b > 5); // true
+      // 11. 逻辑非 !
+      console.log(!(a > 5)); // false
+      // 12. 三元运算符
+      console.log(a > 5 ? "a大于5" : "a小于等于5"); // a大于5
+
+      // 13. 短路运算符
+      a = 0 || 1 || 2; // 1
+      b = 1 && 2 && 0 && 5; // 0
+      console.log(`逻辑或返回值： ${a}; 逻辑与返回值： ${b}`);
+    </script>
+  </body>
+</html>

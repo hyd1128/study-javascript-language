@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js的类型转换</title>
+</head>
+<body>
+    <script>
+        // 这里不具体说明,看这个链接：https://www.runoob.com/js/js-type-conversion.html
+        // 主要说明两个点，js的空数组 [] 和空对象 {} 转换成bool是true
+        var emptyArray = []
+        var emptyObject = {}
+        console.log(typeof emptyArray)
+        console.log(typeof emptyObject)
+        console.log(Boolean(emptyArray))
+        console.log(Boolean(emptyObject))
+    </script>
+</body>
+</html>
